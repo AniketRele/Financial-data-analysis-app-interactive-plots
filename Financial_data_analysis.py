@@ -14,7 +14,7 @@ import plotly.express as px
 
 @st.cache
 def load_data():
-    data=pd.read_csv(r"C:\Users\Aniket.Rele\Desktop\upwork\data\data\Output.csv")
+    data=pd.read_csv("Output.csv")
     return data
 
 st. set_page_config(layout="wide")
