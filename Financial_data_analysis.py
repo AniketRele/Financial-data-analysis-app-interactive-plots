@@ -271,7 +271,7 @@ st.plotly_chart(fig_go3, use_container_width=True)
 #st.plotly_chart(fig_sap, use_container_width=True)
 
 
-url = 'https://financial-data-analysis.herokuapp.com/'
+url = 'https://financial-data-analysis-2.herokuapp.com/'
 
 if st.button('Next Page'):
     webbrowser.open_new_tab(url)
