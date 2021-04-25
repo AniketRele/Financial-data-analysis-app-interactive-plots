@@ -132,95 +132,22 @@ fig_vol.update_xaxes(
 )
 
 fig_go3 = px.line(load_data(),x='Date',y=['Open_Bitcoin','Open_Litcoin','Open_Etherium','Close_Litcoin','Close_Litcoin','Close_Bitcoin','Open_Gold','Close_Gold'],
-                 labels={'Date':'Date', 'value':'Volume'}, height=700)
-fig_go3.update_xaxes(
-    rangeslider_visible=True,
-    rangeselector=dict(
-        buttons=list([
-            dict(count=1, label="1m", step="month", stepmode="backward"),
-            dict(count=6, label="6m", step="month", stepmode="backward"),
-            dict(count=1, label="YTD", step="year", stepmode="todate"),
-            dict(count=1, label="1y", step="year", stepmode="backward"),
-            dict(step="all")
-        ])
-    )
-)
+                 labels={'Date':'Date', 'value':'Volume'}, height=400)
 
 fig_do3 = px.line(load_data(),x='Date',y=['Open_Bitcoin','Open_Litcoin','Open_Etherium','Close_Litcoin','Close_Litcoin','Close_Bitcoin','Open_dollar','Close_dollar'],
-                 labels={'Date':'Date', 'value':'Volume'}, height=700)
-fig_do3.update_xaxes(
-    rangeslider_visible=True,
-    rangeselector=dict(
-        buttons=list([
-            dict(count=1, label="1m", step="month", stepmode="backward"),
-            dict(count=6, label="6m", step="month", stepmode="backward"),
-            dict(count=1, label="YTD", step="year", stepmode="todate"),
-            dict(count=1, label="1y", step="year", stepmode="backward"),
-            dict(step="all")
-        ])
-    )
-)
+                 labels={'Date':'Date', 'value':'Volume'}, height=400)
 
 fig_so3 = px.line(load_data(),x='Date',y=['Open_Bitcoin','Open_Litcoin','Open_Etherium','Close_Litcoin','Close_Litcoin','Close_Bitcoin','Open_sap500','Close_sap500'],
-                 labels={'Date':'Date', 'value':'Volume'}, height=700)
-fig_so3.update_xaxes(
-    rangeslider_visible=True,
-    rangeselector=dict(
-        buttons=list([
-            dict(count=1, label="1m", step="month", stepmode="backward"),
-            dict(count=6, label="6m", step="month", stepmode="backward"),
-            dict(count=1, label="YTD", step="year", stepmode="todate"),
-            dict(count=1, label="1y", step="year", stepmode="backward"),
-            dict(step="all")
-        ])
-    )
-)
-
+                 labels={'Date':'Date', 'value':'Volume'}, height=400)
 
 fig_go4 = px.line(load_data(),x='Date',y=['Low_Bitcoin','Low_Litcoin','Low_Etherium','High_Litcoin','High_Litcoin','High_Bitcoin','Low_Gold','High_Gold'],
-                 labels={'Date':'Date', 'value':'Volume'}, height=700)
-fig_go4.update_xaxes(
-    rangeslider_visible=True,
-    rangeselector=dict(
-        buttons=list([
-            dict(count=1, label="1m", step="month", stepmode="backward"),
-            dict(count=6, label="6m", step="month", stepmode="backward"),
-            dict(count=1, label="YTD", step="year", stepmode="todate"),
-            dict(count=1, label="1y", step="year", stepmode="backward"),
-            dict(step="all")
-        ])
-    )
-)
+                 labels={'Date':'Date', 'value':'Volume'}, height=400)
 
 fig_do4 = px.line(load_data(),x='Date',y=['Low_Bitcoin','Low_Litcoin','Low_Etherium','High_Litcoin','High_Litcoin','High_Bitcoin','Low_dollar','High_dollar'],
-                 labels={'Date':'Date', 'value':'Volume'}, height=700)
-fig_do4.update_xaxes(
-    rangeslider_visible=True,
-    rangeselector=dict(
-        buttons=list([
-            dict(count=1, label="1m", step="month", stepmode="backward"),
-            dict(count=6, label="6m", step="month", stepmode="backward"),
-            dict(count=1, label="YTD", step="year", stepmode="todate"),
-            dict(count=1, label="1y", step="year", stepmode="backward"),
-            dict(step="all")
-        ])
-    )
-)
+                 labels={'Date':'Date', 'value':'Volume'}, height=400)
 
 fig_so4 = px.line(load_data(),x='Date',y=['Low_Bitcoin','Low_Litcoin','Low_Etherium','High_Litcoin','High_Litcoin','High_Bitcoin','Low_sap500','High_sap500'],
-                 labels={'Date':'Date', 'value':'Volume'}, height=700)
-fig_so4.update_xaxes(
-    rangeslider_visible=True,
-    rangeselector=dict(
-        buttons=list([
-            dict(count=1, label="1m", step="month", stepmode="backward"),
-            dict(count=6, label="6m", step="month", stepmode="backward"),
-            dict(count=1, label="YTD", step="year", stepmode="todate"),
-            dict(count=1, label="1y", step="year", stepmode="backward"),
-            dict(step="all")
-        ])
-    )
-)
+                 labels={'Date':'Date', 'value':'Volume'}, height=400)
 
 fig_bit = px.scatter_matrix(bitcoin())
 fig_lit = px.scatter_matrix(litcoin())
